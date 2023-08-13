@@ -1,0 +1,61 @@
+html {
+
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #404040;
+}
+
+.header .menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0 50px;
+}
+
+.header .menu .menu-link {
+    color: #000;
+    font-family: Inter;
+    font-size: 28px;
+}
+
+.header .menu .menu-link:not(:first-child) {
+    margin-left: 100px;
+}
+
+/* headers */
+h1 {
+    text-align: center;
+}
+
+.welcom-image {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("images/coding.jpg"), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.welcom-image .slogan-on-image {
+    position: absolute;
+    right: 0px;
+    top: 273px;
+    width: 700px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.colored-text {
+    color: #17BAAA;
+}
+
