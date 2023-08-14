@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
 
 }
@@ -59,3 +63,110 @@ h1 {
     color: #17BAAA;
 }
 
+.main-title {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+
+.welcom {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.welcom-info {
+    width: 370px;
+}
+
+.welcom-info .text {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.tehnologys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tehnologys .about-tehnology {
+    width: 350px;
+    border-radius: 30px;
+    background-color: #D8FF85;
+    text-align: center;
+    padding: 10px;
+}
+
+.tehnologys .about-tehnology:not(:last-child) {
+    margin-right: 100px;
+}
+
+.tehnologys .about-tehnology .tehnology-name {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.tehnologys .about-tehnology .tehnology-img {
+    margin-bottom: 30px;
+}
+
+.tehnologys .about-tehnology .tehnology-text {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+h3 {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.footer {
+    background-color: #262626;
+    padding: 10px;
+}
+
+.footer .contacts {
+    padding: 26px 36px;
+}
+
+.footer .contacts .contact:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.footer .contacts .contact .footer-h {
+    color: #979797;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+
+.footer .contacts .contact .data {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.footer .contacts .contact .data a {
+    color: #565656;
+    text-decoration: none;
+}
