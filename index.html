@@ -10,79 +10,140 @@
     <!-- connect fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="style-0.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <img src="images\logo.svg" alt="логотип" class="logo">
-        <nav class="navigation">
-            <ul class="menu">
-                <li class="menu-link">Html</li>
-                <li class="menu-link">Css</li>
-                <li class="menu-link">Більше</li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="header__content">
+                <img src="images\logo.svg" alt="логотип" class="logo">
+                <nav class="navigation">
+                    <button class="burger">
+                        <span class="burger-line"></span>
+                    </button>
+                    <ul class="menu">
+                        <li class="menu-link">Html</li>
+                        <li class="menu-link">Css</li>
+                        <li class="menu-link">Більше</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main class="main">
         <section class="welcom-image">
-            <p class="slogan-on-image">Html Css Пам’ятка<br><span class="colored-text">нагадає про дививижний світ веброзробки</span></p>
+            <div class="container">
+                <div class="welcom-image__content">
+                    <p class="welcom-image-slogan">Html Css Пам’ятка<br><span class="colored-text">нагадає про дивовижний<br>світ веброзробки</span></p>
+                </div>
+            </div>
         </section>
         <section class="welcom">
-            <div class="welcom-info">
-                <h1 class="main-title">Html Css Пам’ятка</h1>
-                <p class="text">Цей сайт допоможе згадати вивчене на курсі веб-дизайн. В таблицях зібрано вивчені html теги і css стилі. Тому, забувши щось, я завжди матиму змогу зайти, подивитися і згадати.</p>
-            </div>
-            <div class="image">
-                <img src="images/web-design.jpg" alt="картинка з ноутом і книгою про html & css" width="400">
+            <div class="container">
+                <div class="welcom__content">
+                    <div class="welcom-info">
+                        <h1 class="main-title welcom-title">Html Css Пам’ятка</h1>
+                        <p class="text">Цей сайт допоможе згадати вивчене на курсі вебдизайн. В таблицях зібрано всі вивчені html теги і css стилі. Тому, забувши щось, я завжди матиму змогу зайти, подивитися і згадати.</p>
+                    </div>
+                    <div class="image">
+                        <img src="images/web-design.jpg" alt="картинка з ноутом і книгою про html & css">
+                    </div> 
+                </div>
             </div>
         </section>
         <section class="tehnologys">
-            <article class="about-tehnology">
-                <h2 class="tehnology-name">Html</h2>
-                <img src="images/html_logo.png" alt="логотип html" class="tehnology-img">
-                <p class="tehnology-text">HTML (англ. HyperText Markup Language — мова розмітки гіпертексту) — стандартизована мова розмітки документів для перегляду вебсторінок у браузері.
-                    Ми використовуємо html для створення каркасу вебсторінок. За допомогою нього ми додаємо на сторінку базові елементи каркасу.</p>
-            </article>
-            <article class="about-tehnology">
-                <h2 class="tehnology-name">Css</h2>
-                <img src="images/css_logo.png" alt="логотип css" class="tehnology-img">
-                <p class="tehnology-text">CSS (англ. Cascading Style Sheets, укр. Каскадні таблиці стилів) — це спеціальна мова стилю сторінок, що використовується для опису їхнього зовнішнього вигляду.
-                    Ми використовуємо Css для оформлення вебсторінок. За допомогою нього ми задаємо стилі для елементів каркасу.</p>
-            </article>
+            <div class="container">
+                <div class="tehnologys__content">
+                    <article class="about-tehnology">
+                        <h2 class="tehnology-name">Html</h2>
+                        <img src="images/html_logo.png" alt="логотип html" class="tehnology-img">
+                        <p class="tehnology-text">HTML (англ. HyperText Markup Language — мова розмітки гіпертексту) — стандартизована мова розмітки документів для перегляду вебсторінок у браузері.<br>
+                            Ми використовуємо html для створення каркасу вебсторінок. За допомогою нього ми додаємо на сторінку базові елементи каркасу.</p>
+                    </article>
+                    <article class="about-tehnology">
+                        <h2 class="tehnology-name">Css</h2>
+                        <img src="images/css_logo.png" alt="логотип css" class="tehnology-img">
+                        <p class="tehnology-text">CSS (англ. Cascading Style Sheets, укр. Каскадні таблиці стилів) — це спеціальна мова стилю сторінок, що використовується для опису їхнього зовнішнього вигляду.<br>
+                            Ми використовуємо Css для оформлення вебсторінок. За допомогою нього ми задаємо стилі для елементів каркасу.</p>
+                    </article>
+                </div>
+            </div>
+
         </section>
-        <section class="view-screenshots">
-            <h3>Невеличка карусель зі скрінами коду</h3>
+        <section class="screenshots">
+            <div class="container">
+                <div class="screenshots__content">
+                    <h3 class="title-3 screenshots-title">Невеличка карусель зі скрінами коду</h3>
+                    <!-- Slider main container -->
+                    <div class="swiper screenshots-slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper screenshots-list">
+                        <!-- Slides -->
+                            <div class="swiper-slide screenshots-item">
+                                <img src="images/code_screenshots/code_1.png" alt="">
+                            </div>
+                            <div class="swiper-slide screenshots-item">
+                                <img src="images/code_screenshots/code_2.png" alt="">
+                            </div>
+                            <div class="swiper-slide screenshots-item">
+                                <img src="images/code_screenshots/code_3.png" alt="">
+                            </div>
+                            <div class="swiper-slide screenshots-item">
+                                <img src="images/code_screenshots/code_4.png" alt="">
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <div class="screenshots-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer class="footer">
-        <section class="contacts">
-            <article class="contact phone-number">
-                <h4 class="footer-h">Номер телефону:</h4>
-                <p class="data">
-                    <a href="tel:+380671206362">+380671206362</a>
-                </p>
-            </article>
-            <article class="contact email">
-                <h4 class="footer-h">Електронна адреса:</h4>
-                <p class="data">
-                    <a href="mailto:nazarzabeida@gmail.com">nazarzabeida@gmail.com</a>
-                </p>
-            </article>
-            <article class="contact messagers">
-                <h4 class="footer-h">В соцмережах</h4>
-                <a href="">
-                    <img src="images/facebook.svg" alt="логотип facebook" width="30">
-                </a>
-                <a href="">
-                    <img src="images/instagram.svg" alt="логотип instagram" width="30">
-                </a>
-                <a href="">
-                    <img src="images/telegram.svg" alt="логотип telegram" width="30">
-                </a>
-            </article>
-        </section>
+        <div class="container">
+            <div class="footer__content">
+                <section class="contacts">
+                    <article class="contact phone-number">
+                        <h4 class="footer-h">Номер телефону:</h4>
+                        <p class="data">
+                            <a href="tel:+380671206362">+380671206362</a>
+                        </p>
+                    </article>
+                    <article class="contact email">
+                        <h4 class="footer-h">Електронна адреса:</h4>
+                        <p class="data">
+                            <a href="mailto:nazarzabeida@gmail.com">nazarzabeida@gmail.com</a>
+                        </p>
+                    </article>
+                    <article class="contact messagers">
+                        <h4 class="footer-h">В соцмережах</h4>
+                        <a href="">
+                            <img src="images/facebook.svg" alt="логотип facebook" width="30">
+                        </a>
+                        <a href="">
+                            <img src="images/instagram.svg" alt="логотип instagram" width="30">
+                        </a>
+                        <a href="">
+                            <img src="images/telegram.svg" alt="логотип telegram" width="30">
+                        </a>
+                    </article>
+                </section>
+            </div>
+        </div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
