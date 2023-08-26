@@ -8,6 +8,10 @@ html {
 
 body {
     font-family: Inter, sans-serif;
+}
+
+.wrapper {
+    position: relative;
     overflow-x: hidden;
 }
 
