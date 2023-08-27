@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // If we need pagination
     pagination: {
-      el: '.screenshots-pagination',
-      bulletClass: "screenshots-dot",
-      bulletActiveClass: "screenshots-dot-active",
+      el: '.html_img-pagination',
+      bulletClass: "html_img-dot",
+      bulletActiveClass: "html_img-dot-active",
       clickable: true,
     },
   

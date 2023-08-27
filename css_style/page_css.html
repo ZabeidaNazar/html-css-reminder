@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Html Css Пам'ятка</title>
+    <link rel="stylesheet" href="../style-0.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="style_css.css">
+
+    <!-- connect fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <img src="../images/logo.svg" alt="логотип" class="logo">
+                    <nav class="navigation">
+                        <button class="burger">
+                            <span class="burger-line"></span>
+                        </button>
+                        <ul class="menu">
+                            <li class="menu-link">
+                                <a href="../html_tag/page_html.html">Html</a>
+                            </li>
+                            <li class="menu-link">
+                                <a href="page_css.html">Css</a>
+                            </li>
+                            <li class="menu-link">
+                                <a href="../more-info/more-info.html">Більше</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="about">
+                <div class="container">
+                    <div class="about__content">
+                        <h1 id="css">Css</h1>
+                        <div class="swiper css_img-slider">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper css_images">
+                            <!-- Slides -->
+                                <div class="swiper-slide css_img">
+                                    <div class="img-wrapper">
+                                        <img src="https://astwellsoft.com/assets/images/technologies/css3-logo-.png" height="200px">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide css_img">
+                                    <div class="img-wrapper">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVUnkiT9QTD1LqFXFOTmJRqJEM1-rClQ6L-g&usqp=CAU" height="200px">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide css_img">
+                                    <div class="img-wrapper">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgJ1cf-bUX2R6r9NediKgwMpLhdRF23NKu5w&usqp=CAU" height="200px">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                            <div class="css_img-pagination"></div>
+                        
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        
+                        
+                        <p>Css стилі можна задавати кількома способоми:</p>
+                        <ul>
+                            <li>Записувати в атрибуті style: стиль: значення; стиль: значення</li>
+                            <li>Записувати в парному тегу style</li>
+                            <li>Записувати в файлі з розширенням .css</li>
+                        </ul>
+                        <p>Останній спосіб найкращий, але потрібно не забути підключити css файл до файлу html.<br>
+                        Для цього необхідно скористатися командою <span>&ltlink rel="stylesheet" href="&ltшлях до css файлу&gt"&gt</span></p>
+                    </div>
+                </div>
+            </section>
+            <section class="table_css">
+                <div class="container">
+                    <div class="table_css__content">
+                        <h2 id="style">Css стилі</h2>
+                        <div class="scroll-x">
+                            <table class="command-table">
+                                <thead>
+                                    <tr>
+                                        <td>Css стилі</td>
+                                        <td>Призначення</td>
+                                        <td>Приклади значень</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>border</td>
+                                        <td>Межа<br>(товщина тип колір)</td>
+                                        <td>1px solid black<br>3px solid green</td>
+                                    </tr>
+                                    <tr>
+                                        <td>background-color</td>
+                                        <td>Колір фону</td>
+                                        <td rowspan="2">red, green, blue...<br>#f4ffe5, #FFFF00<br>
+                                            <i>
+                                                Сайти з кольрами:<br>
+                                                <a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB%D1%8C%D0%BE%D1%80%D0%B8_HTML" style="font-size: 16px">Вікіпедія</a><br>
+                                                <a href="https://www.w3schools.com/colors/colors_names.asp">Кольори, які можна задавати словами</a>
+                                            </i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>color</td>
+                                        <td>Колір тексту</td>
+                                    </tr>
+                                    <tr>
+                                        <td>opacity</td>
+                                        <td>Прозорість</td>
+                                        <td>від 0 (повністю прозоро) до 1 (зовсім непрозоро)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>font-family</td>
+                                        <td>Шрифт</td>
+                                        <td>sans-serif (шрифти без засічок)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>font-size</td>
+                                        <td>Розмір символів</td>
+                                        <td>10px, 50px, 25px...</td>
+                                    </tr>
+                                    <tr>
+                                        <td>text-align</td>
+                                        <td>Розміщення тексту</td>
+                                        <td>right, left, center</td>
+                                    </tr>
+                                    <tr>
+                                        <td>border-collapse</td>
+                                        <td>Проміжки між межами в таблиці</td>
+                                        <td>collapse (прибирає проміжки між межами)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>margin</td>
+                                        <td>Зовнішній відступ</td>
+                                        <td>&lttop&gt, &ltright&gt, &ltbottom&gt, &ltleft&gt<br>&lttop&gt, &ltleft and right&gt, &ltbottom&gt<br>&lttop and bottom&gt, &ltleft and right&gt<br>&lttop and bottom and left and right&gt</td>
+                                    </tr>
+                                    <tr>
+                                        <td>padding</td>
+                                        <td>Внутрішній відступ</td>
+                                        <td>&lttop&gt, &ltright&gt, &ltbottom&gt, &ltleft&gt<br>&lttop&gt, &ltleft and right&gt, &ltbottom&gt<br>&lttop and bottom&gt, &ltleft and right&gt<br>&lttop and bottom and left and right&gt</td>
+                                    </tr>
+                                    <tr>
+                                        <td>float</td>
+                                        <td>Приклеювання до краю</td>
+                                        <td>left right</td>
+                                    </tr>
+                                    <tr>
+                                        <td>text-decoration</td>
+                                        <td>Підкреслення тексту</td>
+                                        <td>none underline</td>
+                                    </tr>
+                                    <tr>
+                                        <td>border-radius</td>
+                                        <td>Заокруглення кутів</td>
+                                        <td>2px, 5px, 10px...</td>
+                                    </tr>
+                                    <tr>
+                                        <td>display</td>
+                                        <td>Визначає, як об'єкт відображатиметься на екрані, які властивості матиме</td>
+                                        <td>flex block none inline</td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="table_flex">
+                <div class="container">
+                    <div class="table_flex__content">
+                        <h2>Все що стосується display: flex</h2>
+                        <div class="scroll-x">
+                            <table class="command-table">
+                                <tr>
+                                    <td>justify-content</td>
+                                    <td>Вирівнювання елементів по горизонталі</td>
+                                    <td>flex-start<br>center<br>flex-end<br>space-between<br>space-around</td>
+                                </tr>
+                                <tr>
+                                    <td>align-items</td>
+                                    <td>Вирівнювання елементів по вертикалі</td>
+                                    <td>center<br></td>
+                                </tr>
+                                <tr>
+                                    <td>flex-wrap</td>
+                                    <td>Перенесення елементів на нові рядки</td>
+                                    <td>wrap<br>no-wrap</td>
+                                </tr>
+                                <tr>
+                                    <td>flex-direction</td>
+                                    <td>Напрямок вирівнювання: горизонтальний чи вертикальний</td>
+                                    <td>row (defoult)<br>column</td>
+                                </tr>
+                                <!-- <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr> -->
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <section class="contacts">
+                        <article class="contact phone-number">
+                            <h4 class="footer-h">Номер телефону:</h4>
+                            <p class="data">
+                                <a href="tel:+380671206362">+380671206362</a>
+                            </p>
+                        </article>
+                        <article class="contact email">
+                            <h4 class="footer-h">Електронна адреса:</h4>
+                            <p class="data">
+                                <a href="mailto:nazarzabeida@gmail.com">nazarzabeida@gmail.com</a>
+                            </p>
+                        </article>
+                        <article class="contact messagers">
+                            <h4 class="footer-h">В соцмережах</h4>
+                            <a href="">
+                                <img src="../images/facebook.svg" alt="логотип facebook" width="30">
+                            </a>
+                            <a href="">
+                                <img src="../images/instagram.svg" alt="логотип instagram" width="30">
+                            </a>
+                            <a href="">
+                                <img src="../images/telegram.svg" alt="логотип telegram" width="30">
+                            </a>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </footer> 
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="script_css.js"></script>
+</body>
+</html>

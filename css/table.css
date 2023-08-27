@@ -1,0 +1,51 @@
+.scroll-x {
+    overflow-x: auto;
+}
+
+@media (max-width: 399px) {
+    .scroll-x {
+        overflow-x: scroll;
+    }
+}
+
+.command-table {
+    font-size: 16px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.command-table thead {
+    font-weight: 600;
+    border-bottom: 2px solid #c0bfc6;
+}
+
+.command-table tbody tr {
+    border-top: 1px solid #c0bfc6;
+}
+
+.command-table tbody tr:hover {
+    background-color: #ebe6fc;
+}
+
+.command-table td {
+    padding: 8px;
+}
+
+
+.footnote {
+    display: flex;
+    justify-content: right;
+    margin-top: 5rem;
+}
+
+.footnote p {
+    font-size: 14px;
+    width: 60%;
+}
+
+span {
+    background-color: #bebee3;
+    border-radius: 4px;
+    padding: 2px 4px;
+    line-height: 40px;
+}

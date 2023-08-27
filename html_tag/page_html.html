@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Html Css Пам'ятка</title>
+    <link rel="stylesheet" href="../style-0.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="style_html.css">
+
+    <!-- connect fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <img src="../images/logo.svg" alt="логотип" class="logo">
+                    <nav class="navigation">
+                        <button class="burger">
+                            <span class="burger-line"></span>
+                        </button>
+                        <ul class="menu">
+                            <li class="menu-link">
+                                <a href="page_html.html">Html</a>
+                            </li>
+                            <li class="menu-link">
+                                <a href="../css_style/page_css.html">Css</a>
+                            </li>
+                            <li class="menu-link">
+                                <a href="../more-info/more-info.html">Більше</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="about">
+                <div class="container">
+                    <div class="about__content">
+                        <h1 id="html">Html</h1>
+                        <div class="swiper html_img-slider">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper html_images">
+                            <!-- Slides -->
+                                <div class="swiper-slide html_img">
+                                    <div class="img-wrapper">
+                                        <img src="https://astwellsoft.com/assets/images/technologies/html5-logo.png" height="200px">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide html_img">
+                                    <div class="img-wrapper">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW7rq2G6jja3bja7ottt0nDplvApog8p0HXg&usqp=CAU" height="200px">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide html_img">
+                                    <div class="img-wrapper">
+                                        <img src="https://www.interviewbit.com/blog/wp-content/uploads/2021/10/HTML-Tree-Structure.png" height="200px">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                            <div class="html_img-pagination"></div>
+                        
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+
+                        <p>Теги записуються у &lt&gt</p>
+                        <p>Html теги бувають:<br>одинарні: &ltbr&gt, &ltimg&gt<br>парні: &lthtml&gt&lt/html&gt, &ltbody&gt&lt/body&gt, &lth1&gt&lt/h1&gt, &ltp&gt&lt/p&gt, &lta&gt&lt/a&gt</p>
+                        <p>Парні теги складаються з відкриваючого &ltтег&gt (&lttitle&gt) і закриваючого &lt/тег&gt (&lt/title&gt) тегів.</p>
+                        <p>Одинарні теги складаються тільки з відкриваючого тегу.</p>
+                        <p>Атрибути записуються до відкриваючого тегу через пробіл, значення атрибуту записується після знаку = в лапках "":<br>&ltтег атрибут=""&gt&lt/тег&gt<br>Атрибутів може бути декілька.</p>
+                
+                
+                        <p>Всі теги мають атрибут style, за допомогою якого можна задавати Css стилі, як значення атрибуту.</p>
+                        <p>Всі теги мають атрибут class, за допомогою якого можна задавати Css стилі за допомогою css файлу.</p>
+                        <p>Також всі теги мають атрибут id, за допомогою якого можна створити посилання на частину сайту.<br> id тегів повинні бути унікальними, вони не мають повторюватися!</p>
+                        <p>Наприклад, в нас є абзац зі статтею, проте він знаходиться в самому кінці.<br>
+                            <span>&ltp&gtСтаття&lt/p&gt</span><br>
+                            На початку сайту ми хочемо зробити зміст, який матиме посилання на цю статтю.<br>
+                            <span>&lth3&gtЗміст&lt/h3&gt</span><br>
+                            Додамо до тегу &ltp&gt атрибут id зі значенням, наприклад, last-article.<br>
+                            <span>&ltp id="last-article"&gtСтаття&lt/p&gt</span><br>
+                            Після цього скористаємося тегом &lta&gt, вказавши в посиланні символ #, а тоді id елемента, на який хочемо переходити.<br>
+                            <span>&lth3&gtЗміст&lt/h3&gt</span><br>
+                            <span>&lta href="#last-article"&gtОстання стаття&lt/a&gt</span><br>
+                            Тепер при натисканні на текст "Остання статя" ми будемо переходити до абзацу, id якого last-article.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="tagtag">
+                <div class="container">
+                    <div class="tagtag__content">
+                        <h2 id="tagtag">Парні теги</h2>
+                        <div class="scroll-x">
+                            <table class="command-table">
+                                <thead>
+                                    <tr>
+                                        <td>Тег</td>
+                                        <td>Призначення</td>
+                                        <td>Атрибути</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>html</td>
+                                        <td>В даному тегу знаходиться весь html код</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <tr>
+                                        <td>title</td>
+                                        <td>Текст на вкладці браузера</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <tr>
+                                        <td>body</td>
+                                        <td>В даному тегу знаходиться та інформація, яку користувач бачить на сайті</td>
+                                        <td>background — зображення на фоні</td>
+                                    </tr>
+                                    <tr>
+                                        <td>header</td>
+                                        <td>Шапка сайту з логотипом і меню</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <tr>
+                                        <td>main</td>
+                                        <td>Основна частина сайту</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <tr>
+                                        <td>footer</td>
+                                        <td>Підвал сайту з контактними даними, посиланнями на соцмережі...</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <tr>
+                                        <td>h1..h6</td>
+                                        <td>Заголовки h1 — найбільший, h6 — найменший</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <tr>
+                                        <td>p</td>
+                                        <td>Абзац тексту</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <tr>
+                                        <td>a</td>
+                                        <td>Робить текст або картинку посиланням</td>
+                                        <td>href — посилання</td>
+                                    </tr>
+                                    <tr>
+                                        <td>b</td>
+                                        <td>Жирний текст</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <tr>
+                                        <td>i</td>
+                                        <td>Курсивний текст</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <tr>
+                                        <td>table</td>
+                                        <td>Таблиця</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <tr>
+                                        <td>tr</td>
+                                        <td>Рядок таблиці</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <tr>
+                                        <td>td</td>
+                                        <td>Комірка таблиці</td>
+                                        <td>colspan — об'єднання комірок в колонках (по горизонталі) <br>rowspan — об'єднання комірок в рядках (по вертикалі)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ol</td>
+                                        <td>Нумерований список</td>
+                                        <td>type — тип позначок</td>
+                                    </tr> 
+                                    <tr>
+                                        <td>ul</td>
+                                        <td>Маркований список</td>
+                                        <td>type — тип позначок</td>
+                                    </tr>
+                                    <tr>
+                                        <td>li</td>
+                                        <td>Елемент списку</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <tr>
+                                        <td>div</td>
+                                        <td>Блок</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <tr>
+                                        <td>section</td>
+                                        <td>Секція</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <tr>
+                                        <td>article</td>
+                                        <td>Незалежний блок</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <tr>
+                                        <td>aside</td>
+                                        <td>Стороння інформація</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <tr>
+                                        <td>span</td>
+                                        <td>Виділення частинки тексту</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr> -->
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="container">
+                    <div class="tag__content">
+                        <h2 id="tag">Одинарні теги</h2>
+                        <div class="scroll-x">
+                            <table class="command-table">
+                                <thead>
+                                    <tr>
+                                        <td>Тег</td>
+                                        <td>Призначення</td>
+                                        <td>Атрибути</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>img</td>
+                                        <td>Вставлення зображення</td>
+                                        <td>src — посилання на зображення<br>width — ширина зображення<br>height — висота зображення<br>opacity — прозорість (від 0 до 1)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>br</td>
+                                        <td>Переносить на наступний рядок</td>
+                                        <td>—</td>
+                                    </tr>
+                                    <tr>
+                                        <td>link</td>
+                                        <td>Підключення css, шрифтів і тд.</td>
+                                        <td>rel="stylesheet" — для підключення css<br>href — посилання на елемент, який підключаємо</td>
+                                    </tr>
+                                </tbody> 
+                            </table>
+                        </div>
+                        <div class="footnote">
+                            <p>
+                                <i>*Теги мають дуже багато атрибутів, позначені тільки ті, які вивчалися!</i>
+                                <br><br>
+                                <i>**Атрибути id і style не зазначені, оскільки їх мають усі теги.</i>
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <section class="contacts">
+                        <article class="contact phone-number">
+                            <h4 class="footer-h">Номер телефону:</h4>
+                            <p class="data">
+                                <a href="tel:+380671206362">+380671206362</a>
+                            </p>
+                        </article>
+                        <article class="contact email">
+                            <h4 class="footer-h">Електронна адреса:</h4>
+                            <p class="data">
+                                <a href="mailto:nazarzabeida@gmail.com">nazarzabeida@gmail.com</a>
+                            </p>
+                        </article>
+                        <article class="contact messagers">
+                            <h4 class="footer-h">В соцмережах</h4>
+                            <a href="">
+                                <img src="../images/facebook.svg" alt="логотип facebook" width="30">
+                            </a>
+                            <a href="">
+                                <img src="../images/instagram.svg" alt="логотип instagram" width="30">
+                            </a>
+                            <a href="">
+                                <img src="../images/telegram.svg" alt="логотип telegram" width="30">
+                            </a>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="script_html.js"></script>
+</body>
+</html>

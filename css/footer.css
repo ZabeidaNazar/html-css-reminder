@@ -1,0 +1,35 @@
+.footer {
+    background-color: #262626;
+}
+
+.footer__content {
+    padding: 10px;
+}
+
+.footer__content .contacts {
+    padding: 26px 0;
+}
+
+.footer__content .contacts .contact:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.footer__content .contacts .contact .footer-h {
+    color: #979797;
+    font-family: Inter;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0 0 1.5rem 0;
+}
+
+.footer__content .contacts .contact .data {
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.footer__content .contacts .contact .data a {
+    color: #565656;
+    text-decoration: none;
+}
