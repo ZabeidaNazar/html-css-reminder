@@ -113,10 +113,10 @@ h1 {
     color: #FFF;
     text-align: center;
     font-family: Inter;
-    font-size: 4.8rem;
+    font-size: 48px;
     font-weight: 600;
     margin: 20px 0;
-    margin-bottom: -1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .colored-text {
@@ -333,6 +333,10 @@ h1 {
     html {
         font-size: 9px;
     }
+
+    .welcom-image__content .welcom-image-slogan {
+        font-size: 44px;
+    }
 }
 @media (max-width: 1199px) {
     .container {
@@ -341,13 +345,20 @@ h1 {
     html {
         font-size: 8px;
     }
+    .welcom-image__content .welcom-image-slogan {
+        font-size: 40px;
+    }
 }
 @media (max-width: 991px) {
     .container {
         max-width: 720px;
     }
     html {
-        font-size: 7px;
+        font-size: 8px;
+    }
+
+    .welcom-image__content .welcom-image-slogan {
+        font-size: 36px;
     }
 
     .header__content .menu .menu-link {
@@ -377,7 +388,15 @@ h1 {
         max-width: 540px;
     }
     html {
-        font-size: 6px;
+        font-size: 7px;
+    }
+
+    .welcom-image__content {
+        justify-content: center;
+    }
+
+    .welcom-image__content .welcom-image-slogan {
+        font-size: 32px;
     }
 
     .header__content .menu {
@@ -407,8 +426,8 @@ h1 {
         position: relative;
         display: block;
         background-color: transparent;
-        width: 40px;
-        height: 30px;
+        width: 4rem;
+        height: 3rem;
         color: white;
     }
 
@@ -476,6 +495,10 @@ h1 {
         max-width: unset;
     }
     html {
-        font-size: 5px;
+        font-size: 6.5px;
+    }
+
+    .welcom-image__content .welcom-image-slogan {
+        font-size: 22px;
     }
 }
