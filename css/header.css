@@ -57,6 +57,7 @@ header {
 @media (max-width: 767px) {
     .header__content .menu {
         position: absolute;
+        z-index: 9999;
         top: 80px;
         right: 0;
         height: calc(100vh - 80px);
